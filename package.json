@@ -1,4 +1,5 @@
 {
+  "homepage": "https://allexandar93.github.io/markdown-previewer",
   "name": "markdown",
   "version": "0.1.0",
   "private": true,
@@ -6,12 +7,21 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^5.1.0",
+    "markdown-to-jsx": "^7.1.3",
+    "marked": "^3.0.1",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.5",
     "react-dom": "^17.0.2",
+    "react-markdown": "^7.0.0",
+    "react-marked": "^0.3.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "gh-pages": "^3.2.3"
   }
 }
